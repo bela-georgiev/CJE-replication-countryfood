@@ -1,0 +1,3 @@
+12 Jun 2025
+using `"prices.txt"'
+tex label ctitle() bdec(3) rdec(3) alpha(0.01,0.05,0.10) addstat(Adj R-squared,e(r2_a)) addtext(citreat1,"(-0.238, -0.010)",ptreat1,0.024,citreat2,"(-0.201, 0.092)",ptreat2,0.280,citreat3,"(-0.092, 0.124)",ptreat3,0.777,citreat4,"(-0.259, 0.226)",ptreat4,0.315) nocons append

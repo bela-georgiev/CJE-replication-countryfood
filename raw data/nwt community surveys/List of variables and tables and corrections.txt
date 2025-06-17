@@ -1,0 +1,47 @@
+This file contains instructions for re-creating the file nwtcommunity.dta form the original excel spreadsheets.
+
+The variables community and year are self-explanatory.
+
+The indicator variables nneligible and rnfb_sub_treat, which measure whether communities were eligible for Nutrition North after the transition from Food Mail and whether the community received 
+a subsidy increase in 2016, were hand-coded by us, based on the sources: 
+
+Standing Committee on Aboriginal Affairs and Northern Development, “From Food
+Mail to Nutrition North Canada: Report of the Standing Committee on Aboriginal
+Affairs and Northern Development,” website: https://publications.gc.ca/collections/col
+lection 2011/parl/XC35-403-1-1-02-eng.pdf , 2011, (XC35-403/1-1-02E-PDF).  [Referenced in the paper]
+
+The two "FM RNFB price survey" files containing prices of Food Mail eligible communities.
+
+https://www.cbc.ca/news/canada/north/nutrition-north-more-communities-full-subsidies-1.3684045
+
+We cross-checked both of these sources with the quantity of shipments data to correct several errors (e.g. Stony Rapids is not subsidy eligible, some NNC eligible communities do not receive the subsidy because no retailer has registered, as discussed in the paper).
+
+
+The variable region is based on the regional headers in files like "Country Foods - 1999 to 2019.xlsx"
+
+hh and share are taken from the file "Country Foods - 1999 to 2019.xlsx"
+huntshare is taken from the file "Hunting or Fishing - 1999 to 2019"
+
+hh_median_income is taken from the files "Income_2001.xlsx" through "Income_2021.xlsx" [where we impute the income to the year 3 years before]
+
+yesrate is taken from the file "2018 Food Insecurity.xslx"
+
+indhuntshare nonindhuntshare 
+indpop15plus and nonindpop15plus and abshare
+updated_pop15plus 
+are derived from the files 2008, 2013, 2018 "Hunting, Fishing or Trapping" and "Indigenous Hunting, Fishing"
+
+The variables beginning with obtain_* are taken from the table "Custom - Country foods.xlsx"
+The variables beginning with hunt_* are taken from the table "Custom - Hunting & fishing.xslx"
+
+
+
+The variable trapshare is taken from the table "Trapping - 1989 to 2019.xslx"
+
+
+
+Data edits
+-We replace the 1998 households to 1170 in Inuvik and 6016 in Yellowknife
+-We replaced the variable pop15plus (discussed above) with the number of individuals aged 15+ (from the file "Custom - Hunting & fishing") when it is missing
+-We replaced the absjare variable with 0.97942389 in the year 2018 for Ndilo
+
